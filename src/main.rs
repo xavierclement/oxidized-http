@@ -24,7 +24,7 @@ use clap::Parser;
 #[command(version, about, long_about = None)]
 struct Args {
     /// Number of workers
-    #[arg(short, long, default_value_t = 1)]
+    #[arg(short, long, env, default_value_t = 1)]
     count: u32,
 }
 
